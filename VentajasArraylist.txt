@@ -1,0 +1,24 @@
+Pila:
+MEmoria estatica. 
+Memoria escasa.
+Todo lo que esta aca no se puede modificar/agrandar/achicar de forma dinamica(array).
+
+Heep:
+Memoria dinamica.
+malloc etc para el array.
+
+Primero laburamos solo en la pila:
+-Malo.
+-Ocupamos mucha memoria en la pila, la cual es limitada.
+-No se puede trabajar de forma dinamica.
+-Peligro de overflow.
+
+Despues laburamos con el puntero en la pila y el array en el heep:
+-Liberamos memoria de la pila.
+-Podemos modificar el tamaño del array y trabajarlo de forma dinamica.
+-Malo porque a la hora de agregar elementos o pedir memoria se pide el bloque entero.
+
+Por ultimo laburamos con un array de punteros:
+-Arraylist.
+-Es lo mejor porque se puede laburar de forma dinamica con el array de punteros(en el heep).
+-Los elementos a los que apuntan los punteros del arraylist se consiguen memoria sin ser bloques conjuntos.
